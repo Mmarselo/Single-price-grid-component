@@ -1,0 +1,114 @@
+@import url(https://fonts.google.com/specimen/Karla);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+margin: 0;
+}
+
+.container{
+   display: flex;
+   flex-direction: column;
+    max-width: 720px;
+    width: 90%;
+    min-height: 100vh;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Karla',sans-serif;
+    background-color:  hsl(204, 43%, 93%);
+
+}
+
+.container-principal{
+    width: 100%;
+    padding: 24px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.container-secundario{
+    display: flex;
+    width: auto;
+}
+
+.container-secundario_um{
+    width: 50%;
+    padding: 40px;
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+    border-radius: 0 0 0 16px;
+}
+.container-secundario_dois{
+     width: 50%;
+     padding: 40px;
+     background-color: hsla(179, 62%, 43%, 0.822);
+     color: white;
+     border-radius: 0 0 16px 0;
+}
+
+.titulo-principal{
+    color:  hsl(179, 62%, 43%);
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.titulo-secundario{
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+}
+
+.descricao{
+    color: hsl(218, 22%, 67%);
+    font-weight: 700;
+    margin: 16px 0;
+}
+
+.container-secundario_descricao{
+    color: white;
+    font-weight: 400;
+    margin: 12px;
+}
+
+.container-secundario-descricao_dois{
+    color: white;
+    font-weight: 400;
+    margin: 12px;
+    width: 50%;
+}
+
+.container-secundario_mes{
+       color: hsla(0, 0%, 100%, 0.603);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.container-secundario_botao{
+    width: 100%;
+    padding: 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: none;
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    font-weight: 700;
+}
+
+@media(max-width:820px) {
+    .container-secundario{
+        flex-wrap: wrap;
+       
+    }
+    .container-secundario_um{
+        border-radius: 0;
+        width: 100%;
+    }
+    .container-secundario_dois{
+        border-radius: 0;
+        width: 100%;
+    }
+}
